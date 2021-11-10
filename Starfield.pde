@@ -51,6 +51,12 @@ class OddballParticle extends Particle
   myY = 300;
   myAngle =  (Math.random()*2*Math.PI);
   mySpeed =  (Math.random()*.5);
-  myColor = color(255,0,0);
+  myColor = color((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
   }
+  void show() {
+    fill(myColor);
+    rect((float)myX,(float)myY,10.0,10.0);
+  }
+  
+
 }
